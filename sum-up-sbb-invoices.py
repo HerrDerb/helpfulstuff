@@ -8,16 +8,11 @@ from PyPDF2 import PdfReader
 import sys
 from price_parser import Price
 from decimal import Decimal
-# account credentials
-dir = 'c:\\tmp\\easyride\\'
+
 username = "YOUR_EMAIL"
 password = "YOUR_PASSWORD"
 imap_server = "YOUR_IMAP_SERVER"
 emailfolder = "YOUR_EMAIL_FOLDER_WITH_ALL_SBB_EMAILS"
-
-# use your email provider's IMAP server, you can look for your provider's IMAP server on Google
-# or check this page: https://www.systoolsgroup.com/imap/
-# for office 365, it's this:
 
 def getAsFloat(chfBetrag):
     betrag = chfBetrag.replace('CHF','').strip()
